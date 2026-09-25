@@ -6,3 +6,5 @@ zstyle ':vcs_info:git:*' actionformats '(%b|%a)'
 setopt PROMPT_SUBST
 PROMPT='%F{cyan}%~%f %F{green}${vcs_info_msg_0_}%f %# '
 
+# マシン固有の設定（gitには入れない）
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
